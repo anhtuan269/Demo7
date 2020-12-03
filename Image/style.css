@@ -1,0 +1,44 @@
+@media screen and (min-width: 320px) {
+    .image .content-image {
+        border: 0.5rem solid transparent;
+        margin: -0.5rem -0.25rem 0;
+    }
+    .image .content-image .child a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: url(../image/crosshair.png),  crosshair;
+    }
+    .image .content-image {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image .content-image .child {
+        width:25%;
+        position: relative;
+        padding: 0.5rem 0.25rem 0;
+    } 
+    .image .content-image .x2 {
+        width: 50%;
+    }
+    .image .content-image .child a:hover img {
+        transform: scale(1.1);
+        transition: all 0.5s ease;
+    }
+    .image .content-image .child a:after {
+        content: "";
+        position: absolute;
+        top:0;
+        right: 0;
+        left:0;
+        bottom:0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        background: rgba( 0, 33, 50, 0.6);
+    }
+    .image .content-image .child a:hover:after{
+        opacity: 1;
+        visibility:visible;
+    } 
+}

@@ -1,0 +1,36 @@
+.slide
+    .slider.owl-carousel.owl-theme
+        .slide1
+            .bg-1.image 
+            .content
+                span - EST. 1967 -
+                h1 Taste The Finest Seafood, Taste The Freshness
+                button Explore The Menu
+        .slide1
+            .bg-2.image            
+            .content
+                span - EST. 1967 -
+                h1 Taste The Finest Seafood, Taste The Freshness
+                button Explore The Menu
+        .slide1
+            .bg-3.image 
+            .content
+                span - EST. 1967 -
+                h1 Taste The Finest Seafood, Taste The Freshness
+                button Explore The Menu
+script.
+    $(document).ready(function(){
+        $('.slider').owlCarousel({
+            nav: false,
+            loop: true,
+            autoplay:true,
+            responsive: {
+                1000: {
+                    items: 1
+                },
+                0:{
+                    items: 1
+                } 
+            }
+        })
+    });

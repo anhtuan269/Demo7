@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'Asap', sans-serif;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #595758;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: initial !important;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #040a1c;
+  letter-spacing: -0.5px;
+  font-family: 'Satisfy', cursive;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px!important;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1380px!important;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1480px) {
+  .container {
+    max-width: 1440px!important;
+    margin: auto;
+  }
+}

@@ -1,0 +1,201 @@
+@media screen and (min-width: 320px){
+    .offer .container .offer-container {
+        padding: 114px 16px;
+        position: relative;
+        color: #e2f5ff;
+    }
+    .offer .container .offer-container .offer-bkg {
+        position: absolute;
+        background: #00517f;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        z-index: -1;
+        overflow-x: hidden;
+    }
+     .position {
+        right:-16px!important;
+        left:- 16px!important;
+    }
+    .offer .container .offer-container h2 {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom:40px;
+        line-height:72px;
+        letter-spacing: -0.5px;
+        color: #e2f5ff;
+    }
+    .offer .container .offer-container .main .offer-content {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .offer .container .offer-container .main .offer-content:last-child{
+        padding-bottom:0;
+    }
+    .offer .container .offer-container .main .offer-content h6 {
+        font-size:1.5rem;
+        font-weight: 600;
+        font-family:Asap, sans-serif;
+        color: #e2f5ff;
+        margin-bottom: 0.5rem;
+        line-height: 2rem;
+    }
+    .offer .container .offer-container .main .offer-content p {
+        margin-bottom : 2.5rem;
+        font-size: 16px;
+    }
+    .offer .container .offer-container .main .offer-content a {
+        font-weight: 500;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        line-height: 1rem;
+        color:#6dcbff;
+        font-size: 18px;
+
+    }
+    .offer .container .event-container {
+        padding: 114px 16px;
+        position: relative;
+    }
+    .offer .container .event-container .event-bkg {
+        position: absolute;
+        background:#f5f7f8;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        z-index: -1;
+        overflow-x: hidden;
+    }
+    .offer .container .event-container .row .col-8 h2 {
+        font-size: 60px;
+        font-weight:500;
+        margin-bottom: 40px;
+        line-height:4.5rem;
+        text-align: center;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event {
+        display: flex;
+        justify-content: space-bcetween;
+        align-items: center;
+        background: #fff;
+        color: #57a2cc;
+        padding: 2rem;
+        flex-direction: column;
+        margin-bottom: 0.8rem;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event:hover {
+        color: #fff;
+        background-color: #00517f;
+        transition: all 0.5s ease;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event:hover .title {
+        color:#fff;
+        transition: all 0.5s ease;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event:hover  a {
+        background-color: #57a2cc;
+        color: #000;
+        transition: all 0.5s ease;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event:last-child {
+        margin-bottom: 0;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event .event-day {
+        font-size: 0.875rem;
+        line-height: 1rem;
+        font-style: italic;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event .event-day .num {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1;
+        margin-right: 1rem;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event > * {
+        width: 100%;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event > *:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event .title {
+        font-size: 24px;
+        font-weight:600;
+        color:#00517F;
+        text-align: center;
+
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event a {
+        color: #fff;
+        text-align: center;
+        background-color:#00517F;
+        white-space: nowrap;
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        line-height:16px;
+        padding: 1rem 2.5rem 1rem;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .button-event {
+        text-align: center;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .button-event a {
+        font-weight: 500;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        line-height: 1rem;
+        color:#00517F;
+        font-size: 18px;
+    }
+    
+
+
+}
+@media screen and (min-width: 768px ){
+    .position {
+        right:-40px!important;
+        left:-40px!important;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .offer .container .offer-container .main  {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+    .offer .container .offer-container .main .offer-content {
+        padding: 0 24px;
+    }
+    .offer .container .offer-container .position {
+        right:-16px;
+        left:- 16px;
+    }
+    .offer .container .event-container .row {
+        display: flex;
+        justify-content: center;
+    }
+    .offer .container .event-container .row .col-8 {
+        width: 66.67%;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .offer .container .event-container .row .col-8 .mad-events .mad-event > * {
+        width: auto;
+    }
+
+}
+@media screen and (min-width: 1480px){
+    .position {
+        right:-248.5px!important;
+        left:-248.5px!important;
+    }
+}

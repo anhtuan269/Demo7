@@ -1,0 +1,88 @@
+@media screen and (min-width: 320px){
+    .footer {
+        position: relative;
+        color: #e2f5ff;
+        padding: 8rem 0;
+        background: url(../image/footer_bottom_img.png) no-repeat #00283f bottom center;
+    }
+    .footer .footer-main .container .row .col-4 {
+        text-align: center;
+    } 
+    .footer .footer-main .container .row .col-4 h2 {
+        font-size: 36px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .footer .footer-main .container .row .col-4 ul> *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    .footer .footer-main .container .row .col-4 {
+        padding-bottom: 3rem;
+
+    }
+    .footer .footer-main .container .row .col-4:last-child {
+        padding-bottom: 0rem;
+
+    }
+    .footer .footer-main .container .row .col-4 .logo .image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+    .footer .footer-main .container .row .col-4 a {
+        color: #6dcbff;
+    }
+    .footer .footer-main .container .row .col-4 .logo .social ul  {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .footer-main .container .row .col-4 .logo .social ul li a {
+        color: #6dcbff;
+        opacity:0.7;
+    }
+    .footer .footer-main .container .row .col-4 .logo .social ul li a:hover {
+        opacity:1;
+    }
+    .footer .footer-main .container .row .col-4 .logo .social ul li {
+        padding: 16px 16px 0;
+    }
+    .footer .footer-main .container .row .col-4 .logo .social ul li a i {
+        font-size: 24px;
+    }
+    .footer .footer-main   .coppy-right {
+        margin-top: 4.25rem;
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer a:hover {
+        border-bottom: 1px solid #fff;
+        transition: 0.5s ease;
+    }
+    .footer .footer-main   .coppy-right a {
+        color: #6dcbff;
+    }
+}
+@media screen and (min-width: 768px ){
+    .footer .footer-main .container .row {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .footer .footer-main .container .row .col-4 .logo  .social ul {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer .footer-main .container .row .col-4 {
+        padding-bottom: 0rem;
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer .footer-main .container .row .col-4 .logo  .social ul {
+        display: flex;
+    }
+}

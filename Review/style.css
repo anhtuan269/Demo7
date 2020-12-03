@@ -1,0 +1,95 @@
+@media screen and (min-width: 320px){
+    .review .review-container .row .col-6 .img {
+        background: url(../image/wine.jpg);
+        min-height: 39rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .review .review-container .row .col-7 .img {
+        background: url(../image/smile.jpg)
+    }
+    .review .review-container .row .col-6 {
+        padding-bottom: 32px;
+    }
+    .review .review-container .row .col-6 .view  {
+        padding: 48px 16px 80px;
+    }
+    .review .review-container .row .col-6 .view  .content-view {
+        padding: 0 40px;
+        text-align: center;
+    }
+    .review .review-container .row .col-6 .view  .content-view .vote {
+        margin-bottom: 2rem;
+    }
+    .review .review-container .row .col-6 .view  .content-view .vote i {
+        color: #f2a057;
+        margin-right: 5px;
+
+    }
+    .review .review-container .row .col-6 .view  .content-view .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #00517F;
+    }
+    .review .review-container .row .col-6 .view  .content-view p {
+        margin-bottom: 2rem;
+        font-size: 18px;
+        color: #00517f;
+
+    }
+    .review .review-container .row .col-6 .view  .content-view .author {
+        font-size: 1rem;
+        font-style: italic;
+        color: #7a7879;
+    }
+    .review .review-container .row .col-6 .view  .content-view .author cite {
+        color: #595758;
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .review .review-container .row .col-6 .view .owl-nav .owl-prev span {
+        font-size: 50px;
+        position: absolute;
+        top:41%;
+        left:18px;
+        transform: translateY(-50%);
+        
+    }
+    .review .review-container .row .col-6 .view .owl-nav .owl-next span {
+        font-size: 50px;
+        position: absolute;
+        top:41%;
+        right:18px;
+        transform: translateY(-50%);
+        
+    }
+    .review .review-container .row .col-6  .owl-theme .owl-dots .owl-dot span {
+        width: 66px;
+        height: 3px;
+    }
+    .review .review-container .row .col-6  .owl-theme .owl-dots .owl-dot.active span {
+        background-color: #6dcbff;
+    }
+
+}
+@media screen and (min-width: 1200px ) {
+    .review .review-container .row {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+    .review .review-container .row .col-6 {
+        padding-bottom: 0px;
+    }
+    .review .review-container .row .col-6 .view {
+        padding: 2rem 5.5rem;
+
+    }
+    .review .review-container .row .col-6 .view .content-view {
+        padding: 0 70px;
+    }
+}

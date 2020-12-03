@@ -1,0 +1,202 @@
+.mad
+    .container
+        .mad-content
+            .mad-sgv
+                img(src="./image/top_half_right.png", alt="")
+            .mad-tab
+                .mad-section
+                    span.active#wellcome
+                        a(href="#tab1" target="_parent" ) Wellcome
+                    span#story
+                        a(href="#tab2" target="_parent") Story
+                    span#team
+                        a(href="#tab3" target="_parent") Our Team
+                    span#award
+                        a(href="#tab4" target="_parent") Award
+                .content#id.height1
+                    .wellcome#tab1.opacity
+                        h2 Finest Seafood & Cozy Atmosphere
+                        p 
+                            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum
+                            br 
+                            |dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum
+                            br
+                            | vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.
+                            br
+                            |  Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel,
+                            br 
+                            |scelerisque eget, malesuada at, neque.
+                        .sign
+                            img(src="./image/signature.png", alt="")
+                    #tab2
+                        h2 The Story
+                        .article1
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.
+                            p Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh.
+                        .article2
+                            p Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra sed, nulla.
+                            p Donec porta diam eu massa. Quisque diam lorem, interdum vitae,dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit.
+                    #tab3
+                        h2 Our Team
+                        .team
+                            .chef1.padding
+                                figure
+                                    a(href="#")
+                                        img(src="./image/chef1.jpg", alt="")
+                                    .info
+                                        .infomation
+                                            h6
+                                                a(href="#") Bradley Grosh
+                                            span Cook
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                                        .social
+                                            ul
+                                                li  
+                                                    a(href="#")
+                                                        i.fab.fa-facebook-f
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-twitter
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-instagram
+                            .chef1.padding2
+                                figure
+                                    a(href="#")
+                                        img(src="./image/chef2.jpg", alt="")
+                                    .info
+                                        .infomation
+                                            h6
+                                                a(href="#") Adna Barton
+                                            span Sous Chef
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                                        .social
+                                            ul
+                                                li  
+                                                    a(href="#")
+                                                        i.fab.fa-facebook-f
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-twitter
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-instagram
+                            .chef1
+                                figure
+                                    a(href="#")
+                                        img(src="./image/chef3.jpg", alt="")
+                                    .info
+                                        .infomation
+                                            h6
+                                                a(href="#") Mark Jonhson
+                                            span Chef
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                                        .social
+                                            ul                                           
+                                                li  
+                                                    a(href="#")
+                                                        i.fab.fa-facebook-f
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-twitter
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-instagram
+                            .chef1
+                                figure
+                                    a(href="#")
+                                        img(src="./image/waiter.jpg", alt="")
+                                    .info
+                                        .infomation
+                                            h6
+                                                a(href="#") John McCoist
+                                            span Wine Consultant
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+                                        .social
+                                            ul
+                                                li  
+                                                    a(href="#")
+                                                        i.fab.fa-facebook-f
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-twitter
+                                                li
+                                                    a(href="#")
+                                                        i.fab.fa-instagram
+                    #tab4
+                        h2 Our Award
+                        ul
+                            li
+                                a(href="#")
+                                    img(src="./image/sponsor1.jpg", alt="")
+                            li
+                                a(href="#")
+                                    img(src="./image/sponsor2.jpg", alt="")
+                            li
+                                a(href="#")
+                                    img(src="./image/sponsor3.jpg", alt="")
+                            li
+                                a(href="#")
+                                    img(src="./image/sponsor4.jpg", alt="")
+                            li
+                                a(href="#")
+                                    img(src="./image/sponsor5.jpg", alt="")
+                            li
+                                a(href="#")
+                                    img(src="./image/sponsor6.jpg", alt="")
+                                
+script.
+ $('#wellcome').click(function(){
+     $('#wellcome').addClass('active');
+     $('#story').removeClass('active');
+     $('#team').removeClass('active');
+     $('#award').removeClass('active');
+     $('.content').addClass('height1');
+     $('.content').removeClass('height2');
+     $('.content').removeClass('height3');
+     $('#tab1').addClass('opacity');
+     $('#tab2').removeClass('opacity');
+     $('#tab3').removeClass('opacity');
+     $('#tab4').removeClass('opacity');
+ });
+  $('#story').click(function(){
+     $('#story').addClass('active');
+     $('#wellcome').removeClass('active');
+     $('#team').removeClass('active');
+     $('#award').removeClass('active');
+     $('.content').addClass('height1');
+     $('.content').removeClass('height2');
+     $('.content').removeClass('height3');
+    $('#tab2').addClass('opacity');
+     $('#tab1').removeClass('opacity');
+     $('#tab3').removeClass('opacity');
+     $('#tab4').removeClass('opacity');
+
+ });
+  $('#team').click(function(){
+     $('#team').addClass('active');
+     $('#story').removeClass('active');
+     $('#wellcome').removeClass('active');
+     $('#award').removeClass('active');
+      $('.content').addClass('height2');
+     $('.content').removeClass('height1');
+     $('.content').removeClass('height3');
+      $('#tab3').addClass('opacity');
+     $('#tab1').removeClass('opacity');
+     $('#tab2').removeClass('opacity');
+     $('#tab4').removeClass('opacity');
+ });
+  $('#award').click(function(){
+     $('#award').addClass('active');
+     $('#story').removeClass('active');
+     $('#team').removeClass('active');
+     $('#wellcome').removeClass('active');
+      $('.content').addClass('height3');
+     $('.content').removeClass('height2');
+     $('.content').removeClass('height1');
+      $('#tab4').addClass('opacity');
+     $('#tab1').removeClass('opacity');
+     $('#tab2').removeClass('opacity');
+     $('#tab3').removeClass('opacity');
+ });
+
