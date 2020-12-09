@@ -12,7 +12,7 @@ html, body {
     font-weight: 400;
     color: #595758;
     background-color: #fff;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     overflow-y: initial !important;
   }
   * {
@@ -31,18 +31,18 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 720px!important;
-    margin: auto;
+    margin:0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1380px!important;
-    margin: auto;
+    margin:0 auto;
   }
 }
 @media screen and (min-width: 1480px) {
   .container {
     max-width: 1440px!important;
-    margin: auto;
+    margin:0 auto;
   }
 }

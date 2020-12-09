@@ -1,0 +1,346 @@
+@media screen and (min-width: 320px ) {
+    .list .container {
+        padding: 0 16px;
+    }
+    .list .container .list-bg {
+        position: relative;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+    .list .container .list-bg .bg-color {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .list .container .list-bg .style {
+        left:-16px;
+        right:-16px;
+    }
+    .list .container .list-bg .bg-color .sgv {
+        left: auto;
+        right: 0;
+        margin-top: -4.5rem;
+        margin-right: -3rem;
+        position: absolute;
+        top:0;
+        content:"";
+    }
+    .list .container .row {
+        margin-bottom: 2rem;
+    }
+    .list .container .row .col-12 .seclect {
+        overflow: visible;
+    }
+    .list .container .row .col-12 .seclect .tab {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: -webkit-fill-available;
+        font-weight: 500;
+        font-family: "Asap", serif;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        display: flex;
+        z-index: 2;
+        position: relative;
+        justify-content: center;
+    }
+    .list .container .row .col-12 .seclect .tab span:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+    .list .container .row .col-12 .seclect .tab span a {
+        color: #00517F;
+        display: block;
+        border-bottom: 2px solid transparent;
+
+
+    }
+    .list .container .row .col-12 .seclect .tab span a.active {
+        color: #040a1c;
+        border-color: #040a1c;        
+    }
+    .list .container .row .col-12 .selection {
+        padding-top: 2rem;
+    }
+    .list .container .row .col-12 .selection .mad-col {
+        padding: 1rem 1rem 0;
+    }
+    .list .container .row .col-12 .selection .mad-col span {
+        font-family: 'Asap', sans-serif;
+        font-size: 1rem;
+        color: #7a7879;
+        margin: -1rem -1rem 0;
+        align-items: center;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select {
+        width: 275px;
+    }
+    .list .container .row .col-12 .selection .mad-col .size-2 {
+        position: relative;
+    }
+    
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-selected-option {
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        height: 4rem;
+        line-height: 4rem;
+        color: #7a7879;
+        position: relative;
+        padding-right: 3.5rem;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: 2px solid #e2f5ff;
+        background-color: #fff;
+        padding-left: 1.25rem;
+        width:100%;
+        margin: 0rem -1rem 0;
+    }
+    .list .container .row .col-12 .selection .mad-col .size-2 .mad-selected-option {
+        height: 3rem;
+        line-height: 2.75rem;
+        font-size: 1rem;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-selected-option::after {
+        content:"";
+        font-family: 'Material Icons';
+        font-size: 1.5rem;
+        line-height: inherit;
+        position: absolute;
+        top:40%;
+        right:1.5rem;
+        color: #045481;
+        -webkit-transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44 , 1), visibility .5s cubic-bezier(0.165, 0.84, 0.44 , 1);
+        transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44 , 1), visibility .5s cubic-bezier(0.165, 0.84, 0.44 , 1);
+        width: 12px;
+        height: 12px;
+        border-right: 3px solid #045481;
+        border-bottom: 3px solid #045481;
+        font-weight: 700;
+        transform: rotate(45deg) translateY(-70%);
+        transition: all 0.3s ease;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-selected-option.rotate::after {
+        transform: rotate(225deg) translate(-10%, -10%);
+        transition: all 0.3s ease;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-option-list {
+        line-height: 1.5rem;
+        text-align: inherit;
+        background-color: #fff;
+        color: #7a7879;
+        padding-bottom: 1rem;
+        border: 2px solid #e2f5ff;
+        position: absolute;
+        top: 100%;
+        left:0;
+        width: 100%;
+        opacity:0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44 , 1), visibility .5s cubic-bezier(0.165, 0.84, 0.44 , 1);
+        transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44 , 1), visibility .5s cubic-bezier(0.165, 0.84, 0.44 , 1);
+        transform: scale3d(0.9, 0.9, 0.9);
+        margin: 0 -1rem 0;
+        transition: all 0.5s ease;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-option-list.list1 {
+        opacity: 1;
+        visibility: visible;
+        transform: scale3d(1, 1, 1);
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-option-list li {
+        cursor: pointer;
+        padding-top:1rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        transition: color .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-option-list li.mad-active {
+        color: #57a2cc;
+    }
+    /* product-list */
+    .list .container .list-bg .list-product .product {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        background-color: #f5f7f8;
+        transition: all 0.5s ease;
+    }
+    .list .container .list-bg .list-product .product figure a img {
+        width: 100%;
+    }
+    .list .container .list-bg .list-product .mad-product:not(:first-child){
+        padding-top:32px;
+    }
+    .list .container .list-bg .list-product .product .product-content {
+        padding: 24px 16px 0;
+        margin-bottom:32px;
+        font-size: 0.875rem;
+        color: #7a7879;
+        line-height: 1.5rem
+    }
+    .list .container .list-bg .list-product .product .product-content h6 {
+        font-family: 'Asap', sans-serif;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight:600;
+        margin-bottom:0.5rem;
+
+    }
+    .list .container .list-bg .list-product .product .product-content h6 a {
+        color: #00517F;
+       
+    }
+    .list .container .list-bg .list-product .product .product-content h6 a:hover {
+        border-bottom: 1px solid #00517F;
+    }
+    .list .container .list-bg .list-product .product .product-content span {
+        font-size: 0.875rem;
+        color: #7a7879;
+        line-height: 1.5rem;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .list .container .list-bg .list-product .product .product-content p {
+        font-style: italic;
+        line-height: 1rem;
+    }
+    .list .container .list-bg .list-product .product .price {
+        padding: 0 16px 24px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list .container .list-bg .list-product .product .price span {
+        color: #040a1c;
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding-right: 0.5rem;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc {
+        display: flex;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc .quantity {
+        width: 6.25rem;
+        position: relative;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc .quantity input {
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0.2rem;
+        text-align: center;
+        color :#7a7879;
+        background-color: #fff;
+        border: 2px solid #e2f5ff;
+        width: 100%;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc .quantity button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #7a7879;
+        font-size: 12px;
+        left: 0.875rem;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc .quantity button:focus {
+        border:none;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc .quantity .qty-plus {
+        left: auto;
+        right: 0.875rem;
+    }
+    .list .container .list-bg .list-product .product .price .mad-calc a {
+        padding: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin-left: 0.25rem;
+        display: inline-block;
+        color: #fff;
+        background-color: #00517F;
+        position: relative;
+        text-align: center;
+
+    }
+    .list .container .list-bg ul {
+        margin: 3.5rem -2px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .list .container .list-bg ul li {
+        padding: 2px;
+    }
+    .list .container .list-bg ul li a {
+        font-size: 1rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 3rem;
+        background: #00517f;
+        color: #fff;
+        display: block;
+    }
+    .list .container .list-bg ul li a.active {
+        background: #6dcbff;
+        color: #040a1c;
+    }
+    .list .container .list-bg ul li a:hover {
+        background: #6dcbff;
+        color: #040a1c;
+    }
+}
+@media screen and (min-width: 768px) {
+    .list .container .row .col-12 .selection {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-selected-option {
+        margin: 0 1rem 0;
+    }
+    .list .container .list-bg .style {
+        left:-40px;
+        right:-40px;
+    }
+    .list .container .list-bg .list-product  {
+        display: grid;
+        grid-template-columns : 48% 48%;
+        justify-content: space-between;
+    } 
+    .list .container .list-bg .list-product .mad-product {
+        padding-bottom: 32px;
+        padding-top: 0!important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .list .container .list-bg .style {
+        left:-16px;
+        right:0px;
+    }
+    .list .container .list-bg .list-product  {
+        display: grid;
+        grid-template-columns : 23.5% 23.5% 23.5% 23.5%;
+        justify-content: space-between;
+    } 
+    .list .container .row .col-12 .selection .mad-col .size-2 {
+        margin-left: auto;
+    }
+}
+@media screen and (min-width: 1480px){
+    .list .container .list-bg .style {
+        left:-248.5px;
+        right:-248.5px;
+    }
+}

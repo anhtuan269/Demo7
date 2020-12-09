@@ -229,11 +229,59 @@
                             li
                                 a(href="#") Shop With Right Sidebar
                             li
-                                a(href="#") Shop Without Sidebar
+                                a(href="list.html") Shop Without Sidebar
                             li
                                 a(href="#") Single Product Page
                             li
                                 a(href="#") Cart/Checkout
                             li
                                 a(href="#") My Account
-                        
+                .icon
+                    a(href="#")
+                        i.far.fa-user
+                    .shop-cart
+                        a.cart(href="#")
+                            i.fas.fa-shopping-cart
+                            span 3
+                        .cart-info#info
+                            .product-small
+                                .small
+                                    button
+                                        i.far.fa-times-circle
+                                    a(href="single.html")
+                                        img(src="./image/ss1.jpg", alt="")
+                                    .description
+                                        a(href="#") Cured Sea Trout
+                                        span 1 x $6.00
+                                .small
+                                    button
+                                        i.far.fa-times-circle
+                                    a(href="single.html")
+                                        img(src="./image/ss2.jpg", alt="")
+                                    .description
+                                        a(href="#") Cured Sea Trout
+                                        span 1 x $6.00
+                            .product-footer
+                                .total
+                                    | Subtotal: 
+                                    span $14.00
+                                a(href="#")
+                                    span Checkout
+                                    i.fas.fa-long-arrow-alt-right
+
+                            
+                    a(href="#")
+                        i.fas.fa-search
+
+
+script.
+ $('.cart').click(function(){
+     $('.cart-info').toggleClass('show-cart');
+     
+ })
+ $('.cart-info').on(click, function(e){
+     var target = e.target;
+     if( target.id != " info") {
+         $('.cart-info').removeClass('show-cart');
+     }
+ })
