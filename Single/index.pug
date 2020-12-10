@@ -235,18 +235,18 @@
                     .widget
                         .cart-info#info
                                 .product-small
-                                    h4.title Cart
-                                    .small
-                                        button
-                                            i.far.fa-times-circle
+                                    h4.title Cart   
+                                    .small.small1
+                                        button.close
+                                            i.far.fa-times-circle#close1
                                         a(href="single.html")
                                             img(src="./image/ss1.jpg", alt="")
                                         .description
                                             a(href="#") Cured Sea Trout
                                             span 1 x $6.00
-                                    .small
-                                        button
-                                            i.far.fa-times-circle
+                                    .small.small2
+                                        button.close
+                                            i.far.fa-times-circle#close2
                                         a(href="single.html")
                                             img(src="./image/ss2.jpg", alt="")
                                         .description
@@ -357,6 +357,12 @@
                                     
                                     
 script.
+    $('#close1').click(function(){
+        $('.small1').addClass('opacity');
+    })
+    $('#close2').click(function(){
+        $('.small2').addClass('opacity');
+    })
     $('#check').click(function(){
         $('#check').toggleClass('checkin')
     })
