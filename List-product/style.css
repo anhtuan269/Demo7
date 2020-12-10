@@ -1,4 +1,5 @@
 @media screen and (min-width: 320px ) {
+
     .list .container {
         padding: 0 16px;
     }
@@ -238,7 +239,7 @@
     .list .container .list-bg .list-product .product .price .mad-calc .quantity input {
         height: 2.5rem;
         font-size: 1rem;
-        padding: 0.2rem;
+        padding: 0 2rem;
         text-align: center;
         color :#7a7879;
         background-color: #fff;
@@ -336,6 +337,13 @@
     } 
     .list .container .row .col-12 .selection .mad-col .size-2 {
         margin-left: auto;
+    }
+    .list .container .row .col-12 .selection .mad-col .mad-custom-select .mad-option-list  {
+        display: flex;
+        z-index: 999;
+        flex-direction: column;
+        left: auto;
+        right: 0;
     }
 }
 @media screen and (min-width: 1480px){

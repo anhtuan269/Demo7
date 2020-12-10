@@ -50,7 +50,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -71,7 +71,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -92,7 +92,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -113,7 +113,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -134,7 +134,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -155,7 +155,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -176,7 +176,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -197,7 +197,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -218,7 +218,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -239,7 +239,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -260,7 +260,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -281,7 +281,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -302,7 +302,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -323,7 +323,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -344,7 +344,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -365,7 +365,7 @@
                             span.mad-price $9.00
                             .mad-calc
                                 .quantity
-                                    input(type="text" value="1" readonly)
+                                    input#quantity(type="text" value="1" readonly)
                                     button.qty-plus(type="text" )
                                         i.fas.fa-plus
                                     button.qty-minus(type="text" )
@@ -387,6 +387,34 @@
                         i.fas.fa-angle-right
 
 script.
+    //- documnet.querySelector(".qty-minus").setAtribute("disable","disable")
+    //- var valueCount
+    //- documnet.querySelector(".qty-plus").addEventListener("click", function(){
+    //-     valueCount = document.getElementById("quantity").value;
+    //-     valueCount++;
+    //- })
+    //- documnet.querySelector(".qty-minus").addEventListener("click", function(){
+    //-     valueCount = document.getElementById("quantity").value;
+    //-     valueCount--;
+    //- })
+    if ($('.quantity').length) {
+        var q = $('.quantity');
+        q.each(function () {
+            var $this = $(this),
+                button = $this.children('button'),
+                input = $this.children('input[type="text"]'),
+                val = +input.val();
+            button.on('click', function () {
+                if ($(this).hasClass('qty-minus')) {
+                    if (val === 1) return false;
+                    input.val(--val);
+                }
+                else {
+                    input.val(++val);
+                }
+            });
+        });
+    }
     $('#1').click(function(){
         $('#1').addClass('mad-active');
         $('#2').removeClass('mad-active');

@@ -1,0 +1,53 @@
+@media screen and (min-width: 320px){
+    .product .container .list-bg {
+        position: relative;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+    .product .container .list-bg .bg-color {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .product .container .list-bg .style {
+        left:-16px;
+        right:-16px;
+    }
+    .product .container .list-bg .bg-color .sgv {
+        left: auto;
+        right: 0;
+        margin-top: -4.5rem;
+        margin-right: -3rem;
+        position: absolute;
+        top:0;
+        content:"";
+    }
+}
+@media screen and (min-width: 480px){
+    .product .container .list-bg .style {
+        left:-16px;
+        right:-16px;
+    }
+}
+@media screen and (min-width: 768px){
+    .product .container .list-bg .style {
+        left:-40px;
+        right:-40px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .product .container .list-bg .style {
+        left:-16px;
+        right:0px;
+    }
+}
+@media screen and (min-width: 1480px){
+    .product .container .list-bg .style {
+        left:-248.5px;
+        right:-248.5px;
+    }
+}
