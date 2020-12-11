@@ -1,0 +1,230 @@
+.checkout
+    .container
+        .list-bg    
+            .style.bg-color
+                .sgv
+                    img(src="./image/top_half_right.png", alt="")
+            .checkout-content
+                .content-element
+                    p.header-title
+                        | Required fields are followed by 
+                        span.red *
+                    .table-cart.shop-cart
+                        table.responsive
+                            thead
+                                tr.bg
+                                    th Product
+                                    th Price
+                                    th Quantity
+                                    th Actions
+                            tbody
+                                tr.item
+                                    td(data-cell-title="product")
+                                        .small
+                                            .item-product
+                                                a(href="#")
+                                                    img(src="./image/checkout.jpg", alt="")
+                                                .description
+                                                    h5 
+                                                        a(href="#") Cured Sea Trout
+                                                    p roast beetroot & beetroot ketchup
+                                    td(data-cell-title="price") 
+                                        span.price $8.00
+                                    td(data-cell-title="quantity")
+                                        .quantity
+                                            input#quantity(type="text" value="1" readonly)
+                                            button.qty-plus(type="text" )
+                                                i.fas.fa-plus
+                                            button.qty-minus(type="text" )
+                                                i.fas.fa-minus
+                                    td(data-cell-title="action")
+                                        button.close-item 
+                                            | Remove
+                                            i.far.fa-times-circle
+                                tr.item
+                                    td(data-cell-title="product")
+                                        .small
+                                            .item-product
+                                                a(href="#")
+                                                    img(src="./image/checkout2.jpg", alt="")
+                                                .description
+                                                    h5 
+                                                        a(href="#") Seafood Soup
+                                                    p gruyere, garlic croutons & rouille
+                                    td(data-cell-title="price") 
+                                        span.price $10.00
+                                    td(data-cell-title="quantity")
+                                        .quantity
+                                            input#quantity(type="text" value="1" readonly)
+                                            button.qty-plus(type="text" )
+                                                i.fas.fa-plus
+                                            button.qty-minus(type="text" )
+                                                i.fas.fa-minus
+                                    td(data-cell-title="action")
+                                        button.close-item 
+                                            | Remove
+                                            i.far.fa-times-circle
+                .content-element
+                    .row.style-2
+                        .col-6
+                            .content
+                                h4 I Would Like My Oder
+                                .form-control
+                                    .feilds(style="display: block")
+                                        input#radio1(type="radio" checked=" checked")
+                                        label(for="radio-1").radio Delivered
+                                        input#radio2(type="radio")
+                                        label(for="radio-2").radio For collection
+                                form.form.style-2.size-2
+                                    .col
+                                        label
+                                            | Address Type
+                                            span.red *
+                                        input(type="text")
+                                    .col
+                                        label
+                                            | Street
+                                            span.red *
+                                        input(type="text" placeholder="Street")
+                                    .col
+                                        label
+                                            | Apt/Ste/Rm 
+                                            span.red *
+                                        input(type="text" placeholder="Apt/Ste/Rm ")
+                                    .col
+                                        label
+                                            | Gate Code
+                                            span.red *
+                                        input(type="text" placeholder="Gate Code")
+                                    .col
+                                        label
+                                            | Notes
+                                            span.red *
+                                        input(type="text" placeholder="Notes")
+                                    .col
+                                        label When is it for?                
+                                            .form
+                                                .feilds(style="display: block")
+                                                    input#radio3(type="radio" checked=" checked")
+                                                    label(for="radio-3").radio ASAP, approx. 6:52 pm
+                                                    input#radio4(type="radio" )
+                                                    label(for="radio-4").radio Later (At a set time)
+                            .content 
+                                h4 Oder-total
+                                .content-9
+                                    table.total
+                                        tbody
+                                            tr
+                                                th Subtotal
+                                                td $14.00
+                                            tr
+                                                th Delivery
+                                                td $6.00
+                                            tr
+                                                th Tax
+                                                td $3.60
+                                        tfoot
+                                            tr
+                                                th Total
+                                                td $23.60
+                                    a(href="#")
+                                        img(src="./image/paycards.jpg", alt="")
+                            .content
+                                h4 Select Payment Method
+                                .form
+                                    .feilds(style="display: block")
+                                        input#radio5(type="radio" checked=" checked")
+                                        label(for="radio-5").radio 
+                                            b Cash On Delivery
+                                            br
+                                            span Pay with cash upon delivery.
+                                        input#radio6(type="radio" )
+                                        label(for="radio-6").radio
+                                            b Pau Via PayPal
+                                            br
+                                            span Note: PayPal Sandbox account is a preferable way of testing PayPal payments. If for some reasons this method is not suitable for you, test the payments via card using randomly generated data.
+                        .col-6
+                            .content
+                                h4 Billing Detail
+                                form.form.style-2.size-2
+                                    .col
+                                        label
+                                            | Email Address
+                                            span.red *
+                                        input(type="text" placeholder="Email Address")
+                                    .col
+                                        label
+                                            | Phone Number
+                                            span.red *
+                                        input(type="text" placeholder="Phone Number ")
+                                    .col
+                                        label
+                                            | First Name
+                                            span.red *
+                                        input(type="text" placeholder="First Name")
+                                    .col
+                                        label
+                                            | Last Name
+                                    input(type="text" placeholder="Last Name")
+                            .content
+                                h4 Creat an Acount (Optional)
+                                form.form.style-2.size-2
+                                    .col
+                                        label
+                                            | User Name
+                                            span.red *
+                                            br
+                                            span.text The username you will use to log into your account.
+                                        input(type="text" placeholder="User Name")
+                                    .col
+                                        label
+                                            | Password
+                                            span.red *
+                                            br
+                                            span.text The password used to access your account.
+                                        input(type="text" placeholder="Password ")
+                                    .col
+                                        label
+                                            | Password Again
+                                            span.red *
+                                            br
+                                            span.text Confirm Your Password.
+                                        input(type="text" placeholder="Comfirm Password")
+                            .content.mr
+                                h4 Additional information
+                                form.form.style-2.size-2
+                                    .col
+                                        label(for="") Oder note: 
+                                        textarea#oder(name="Note",rows="5")
+                                    .col
+                                        .fields(style="display: block")
+                                            input(type="checkbox")
+                                            label#check(for="checkbox-1")
+                                                | Agree to Terms ?
+                                                a(href="#") Show Terms
+                            .content-4
+                                h6 
+                                    b Total: $46.90
+                                a.btn.btn-big(href="#") purchase
+script.
+    $('#check').click(function(){
+        $('#check').toggleClass('checked');
+    })
+    if ($('.quantity').length) {
+        var q = $('.quantity');
+        q.each(function () {
+            var $this = $(this),
+                button = $this.children('button'),
+                input = $this.children('input[type="text"]'),
+                val = +input.val();
+            button.on('click', function () {
+                if ($(this).hasClass('qty-minus')) {
+                    if (val === 1) return false;
+                    input.val(--val);
+                }
+                else {
+                    input.val(++val);
+                }
+            });
+        });
+    }             
