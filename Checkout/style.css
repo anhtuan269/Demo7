@@ -110,7 +110,7 @@
         border-color: inherit;
     }
     .checkout .container .list-bg .checkout-content .content-element .table-cart table tbody tr td:not(:last-child)  {
-        border-bottom: 1px solid #d7e0e5;
+        border-bottom: 1px solid #e2f5ff;
     }
     .checkout .container .list-bg .checkout-content .content-element .table-cart table tbody tr td .small .item-product a {
         display: inline-block;
@@ -256,7 +256,7 @@
         height: 1rem;
         border-radius: 50%;
         background-color: #00517f;
-        left: 0.35rem;
+        left: 0.4rem;
         top: 0.35rem;
         display: none;
         position: absolute;
@@ -306,8 +306,7 @@
         font-size: 1rem;
         height: auto;
         resize: none;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
         display: block;
     }
     input[type="checkbox"]{
